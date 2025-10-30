@@ -1,22 +1,25 @@
 services:
   db:
     image: postgres:15
+    container_name: postgres
     restart: always
     environment:
-      POSTGRES_USER: management
-      POSTGRES_PASSWORD: mysecretpassword
-      POSTGRES_DB: managementUsers
+      POSTGRES_USER: LGCUser
+      POSTGRES_PASSWORD: LGCPassword
+      POSTGRES_DB: LGC_DB
     ports:
       - "5431:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     networks:
-      - UsersNetwork
+      - LGCNetwork
 
 volumes:
   postgres_data:
     driver: local
 
 networks:
-  UsersNetwork:
+  LGCNetwork:
+    name: LGCNetwork
     driver: bridge
+    external: true
