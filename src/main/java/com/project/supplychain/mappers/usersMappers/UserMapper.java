@@ -1,6 +1,10 @@
 package com.project.supplychain.mappers.usersMappers;
 
+import com.project.supplychain.DTOs.productDTOs.ProductDTO;
+import com.project.supplychain.DTOs.usersDTOs.UserDTO;
+import com.project.supplychain.DTOs.usersDTOs.UserLoginDTO;
 import com.project.supplychain.DTOs.usersDTOs.UserRegisterDTO;
+import com.project.supplychain.models.Product;
 import com.project.supplychain.models.user.Admin;
 import com.project.supplychain.models.user.Client;
 import com.project.supplychain.models.user.User;
@@ -34,5 +38,10 @@ public class UserMapper {
                     .role(dto.getRole())
                     .build();
         };
+    }
+    public UserDTO toDTO(User user) {
+        if (user == null) return null;
+        return UserDTO.builder().build();
+
     }
 }

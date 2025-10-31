@@ -9,6 +9,7 @@ import lombok.Setter;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 @NoArgsConstructor
@@ -27,7 +28,7 @@ public class SalesOrder {
     private LocalDateTime deliveredAt;
 
     @OneToMany(mappedBy = "salesOrder", cascade = {CascadeType.ALL,CascadeType.MERGE}, orphanRemoval = true)
-    private ArrayList<SalesOrderLine> salesOrderLines = new ArrayList<>();
+    private List<SalesOrderLine> salesOrderLines = new ArrayList<>();
 
     @ManyToOne
     @JoinColumn(name = "shipment_id")
