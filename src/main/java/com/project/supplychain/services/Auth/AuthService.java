@@ -75,7 +75,7 @@ public class AuthService {
                 throw new BadRequestException(errorMsg);
             }
             if(!authRepository.existsByEmailIgnoreCase(userDto.getEmail())){
-                throw new BadRequestException("The email not exist please try the signup first .");
+                throw new BadRequestException(" The email not exist please try the signup first .");
             }
             User user = authRepository.getByEmail(userDto.getEmail());
             if(!passwordEncoder.matches(userDto.getPassword(),user.getPassword())){
