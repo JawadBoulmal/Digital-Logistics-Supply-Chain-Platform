@@ -10,6 +10,7 @@ import lombok.Setter;
 import lombok.experimental.SuperBuilder;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @AllArgsConstructor
 @Getter
@@ -26,7 +27,7 @@ public class WarehouseManager extends User{
     private Warehouse warehouse;
 
     @OneToMany(mappedBy = "warehouseManager", cascade = {CascadeType.ALL,CascadeType.MERGE}, orphanRemoval = true)
-    private ArrayList<Warehouse> warehouses;
+    private List<Warehouse> warehouses = new ArrayList<>();
 
     public WarehouseManager() {
         this.role = Roles.WAREHOUSE_MANAGER;

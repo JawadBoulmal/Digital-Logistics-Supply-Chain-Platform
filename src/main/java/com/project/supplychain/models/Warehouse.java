@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 @NoArgsConstructor
@@ -22,10 +23,10 @@ public class Warehouse {
     private boolean active;
 
     @OneToMany(mappedBy = "warehouse", cascade = {CascadeType.ALL,CascadeType.MERGE}, orphanRemoval = true)
-    private ArrayList<Inventory> inventories;
+    private List<Inventory> inventories = new ArrayList<>();
 
     @OneToMany(mappedBy = "warehouse", cascade = {CascadeType.ALL,CascadeType.MERGE}, orphanRemoval = true)
-    private ArrayList<SalesOrder> salesOrders;
+    private List<SalesOrder> salesOrders = new ArrayList<>();
 
     @ManyToOne
     @JoinColumn(name = "warehouse_manager_id")
