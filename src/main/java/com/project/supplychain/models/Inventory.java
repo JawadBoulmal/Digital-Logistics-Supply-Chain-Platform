@@ -13,6 +13,9 @@ import java.util.UUID;
 @Setter
 @Getter
 @Entity
+@Table(
+        uniqueConstraints = @UniqueConstraint(columnNames = {"product_id", "warehouse_id"})
+)
 public class Inventory {
     @Id
     @GeneratedValue

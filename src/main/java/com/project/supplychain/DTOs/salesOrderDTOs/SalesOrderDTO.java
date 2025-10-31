@@ -27,5 +27,6 @@ public class SalesOrderDTO {
     @NotNull(message = "clientId is required")
     private UUID clientId;
 
+    @NotNull(message = "warehouseId is required")
     private UUID warehouseId;
 }

@@ -5,10 +5,12 @@ import com.project.supplychain.enums.OrderStatus;
 import com.project.supplychain.exceptions.BadRequestException;
 import com.project.supplychain.mappers.SalesOrderMapper;
 import com.project.supplychain.models.SalesOrder;
+import com.project.supplychain.models.Warehouse;
 import com.project.supplychain.models.user.Client;
 import com.project.supplychain.models.user.User;
 import com.project.supplychain.repositories.SalesOrderRepository;
 import com.project.supplychain.repositories.UserRepository;
+import com.project.supplychain.repositories.WarehouseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -26,6 +28,10 @@ public class SalesOrderService {
     @Autowired
     private UserRepository userRepository;
 
+
+    @Autowired
+    private WarehouseRepository warehouseRepository;
+
     @Autowired
     private SalesOrderMapper salesOrderMapper;
 
@@ -42,9 +48,11 @@ public class SalesOrderService {
             throw new BadRequestException("Provided user is not a client");
         }
 
+        Warehouse warehouse = warehouseRepository.getById(dto.getWarehouseId());
         entity.setClient(client);
         entity.setStatus(OrderStatus.CREATED);
         entity.setCreatedAt(LocalDateTime.now());
+        entity.setWarehouse(warehouse);
 
         SalesOrder saved = salesOrderRepository.save(entity);
         HashMap<String, Object> result = new HashMap<>();
