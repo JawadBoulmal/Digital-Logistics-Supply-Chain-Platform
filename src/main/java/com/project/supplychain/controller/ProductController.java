@@ -76,4 +76,14 @@ public class ProductController {
             throw new BadRequestException(e.getMessage());
         }
     }
+
+    @PatchMapping("/{sku}/deactivate")
+    public ResponseEntity<?> desactivateProduct(@PathVariable String sku){
+        try {
+            HashMap<String, Object> result = productService.DesactivateProduct(sku);
+            return ResponseEntity.ok(result);
+        } catch (Exception e) {
+            throw new BadRequestException(e.getMessage());
+        }
+    }
 }

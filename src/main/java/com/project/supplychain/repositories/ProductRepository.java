@@ -9,4 +9,7 @@ import java.util.UUID;
 
 public interface ProductRepository extends JpaRepository<Product , UUID> {
     Optional<Product> findBySku(String sku);
+    Product findProductBySku(String sku);
+
+    Product getBySku(String sku);
 }
