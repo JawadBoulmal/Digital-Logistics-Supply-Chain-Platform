@@ -34,8 +34,9 @@ public class RoleAspect {
         String authHeader = request.getHeader("Authorization");
 
         if (authHeader == null || !authHeader.startsWith("Bearer ")) {
+            respo.put("message","You are not authenticated !");
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
-                    .body("Missing or invalid token");
+                    .body(respo);
         }
 
         String token = authHeader.substring(7);

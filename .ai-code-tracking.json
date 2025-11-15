@@ -1,0 +1,176 @@
+{
+  "version": "1.0",
+  "records": [
+    {
+      "filePath": "S:/Spring Core/Digital Logistics And Supply Chain Platform/src/main/java/com/project/supplychain/controller/WarehouseController.java",
+      "timestamp": 1763116225897,
+      "startOffset": 1066,
+      "endOffset": 1115,
+      "codeContent": "    @RoleRequired({\"ADMIN\",\"WAREHOUSE_MANAGER\"})\n",
+      "aiProbability": 90,
+      "aiTool": "AI Assistant",
+      "detectionMethod": "REALTIME_SPEED_ANALYSIS",
+      "lineCount": 2
+    },
+    {
+      "filePath": "/RoleAspect.java",
+      "timestamp": 1763116266262,
+      "startOffset": 1381,
+      "endOffset": 1401,
+      "codeContent": "IntellijIdeaRulezzz ",
+      "aiProbability": 90,
+      "aiTool": "AI Assistant",
+      "detectionMethod": "REALTIME_SPEED_ANALYSIS",
+      "lineCount": 1
+    },
+    {
+      "filePath": "S:/Spring Core/Digital Logistics And Supply Chain Platform/src/main/java/com/project/supplychain/aspects/RoleAspect.java",
+      "timestamp": 1763116276925,
+      "startOffset": 1386,
+      "endOffset": 1410,
+      "codeContent": "Missing or invalid token",
+      "aiProbability": 90,
+      "aiTool": "AI Assistant",
+      "detectionMethod": "REALTIME_SPEED_ANALYSIS",
+      "lineCount": 1
+    },
+    {
+      "filePath": "/WarehouseController.java",
+      "timestamp": 1763116569596,
+      "startOffset": 1071,
+      "endOffset": 1120,
+      "codeContent": "RoleRequired({\"ADMIN\",\"WAREHOUSE_MANAGER\"})\n    @",
+      "aiProbability": 90,
+      "aiTool": "AI Assistant",
+      "detectionMethod": "REALTIME_SPEED_ANALYSIS",
+      "lineCount": 2
+    },
+    {
+      "filePath": "S:/Spring Core/Digital Logistics And Supply Chain Platform/src/main/java/com/project/supplychain/services/WarehouseService.java",
+      "timestamp": 1763116603388,
+      "startOffset": 642,
+      "endOffset": 691,
+      "codeContent": "    @RoleRequired({\"ADMIN\",\"WAREHOUSE_MANAGER\"})\n",
+      "aiProbability": 90,
+      "aiTool": "AI Assistant",
+      "detectionMethod": "REALTIME_SPEED_ANALYSIS",
+      "lineCount": 2
+    },
+    {
+      "filePath": "S:/Spring Core/Digital Logistics And Supply Chain Platform/src/main/java/com/project/supplychain/services/WarehouseService.java",
+      "timestamp": 1763116603410,
+      "startOffset": 647,
+      "endOffset": 683,
+      "codeContent": "com.project.supplychain.annotations.",
+      "aiProbability": 90,
+      "aiTool": "AI Assistant",
+      "detectionMethod": "REALTIME_SPEED_ANALYSIS",
+      "lineCount": 1
+    },
+    {
+      "filePath": "S:/Spring Core/Digital Logistics And Supply Chain Platform/src/main/java/com/project/supplychain/services/WarehouseService.java",
+      "timestamp": 1763116603428,
+      "startOffset": 107,
+      "endOffset": 163,
+      "codeContent": "import com.project.supplychain.annotations.RoleRequired;",
+      "aiProbability": 90,
+      "aiTool": "AI Assistant",
+      "detectionMethod": "REALTIME_SPEED_ANALYSIS",
+      "lineCount": 1
+    },
+    {
+      "filePath": "S:/Spring Core/Digital Logistics And Supply Chain Platform/src/main/java/com/project/supplychain/services/WarehouseService.java",
+      "timestamp": 1763116608881,
+      "startOffset": 651,
+      "endOffset": 700,
+      "codeContent": "    @RoleRequired({\"ADMIN\",\"WAREHOUSE_MANAGER\"})\n",
+      "aiProbability": 70,
+      "aiTool": "AI Assistant",
+      "detectionMethod": "REALTIME_SPEED_ANALYSIS",
+      "lineCount": 2
+    },
+    {
+      "filePath": "S:/Spring Core/Digital Logistics And Supply Chain Platform/src/main/java/com/project/supplychain/services/WarehouseService.java",
+      "timestamp": 1763116608913,
+      "startOffset": 656,
+      "endOffset": 692,
+      "codeContent": "com.project.supplychain.annotations.",
+      "aiProbability": 90,
+      "aiTool": "AI Assistant",
+      "detectionMethod": "REALTIME_SPEED_ANALYSIS",
+      "lineCount": 1
+    },
+    {
+      "filePath": "S:/Spring Core/Digital Logistics And Supply Chain Platform/src/main/java/com/project/supplychain/services/WarehouseService.java",
+      "timestamp": 1763116608928,
+      "startOffset": 107,
+      "endOffset": 163,
+      "codeContent": "import com.project.supplychain.annotations.RoleRequired;",
+      "aiProbability": 90,
+      "aiTool": "AI Assistant",
+      "detectionMethod": "REALTIME_SPEED_ANALYSIS",
+      "lineCount": 1
+    },
+    {
+      "filePath": "S:/Spring Core/Digital Logistics And Supply Chain Platform/src/main/java/com/project/supplychain/services/WarehouseService.java",
+      "timestamp": 1763116609702,
+      "startOffset": 712,
+      "endOffset": 748,
+      "codeContent": "com.project.supplychain.annotations.",
+      "aiProbability": 70,
+      "aiTool": "AI Assistant",
+      "detectionMethod": "REALTIME_SPEED_ANALYSIS",
+      "lineCount": 1
+    },
+    {
+      "filePath": "S:/Spring Core/Digital Logistics And Supply Chain Platform/src/main/java/com/project/supplychain/services/WarehouseService.java",
+      "timestamp": 1763116612231,
+      "startOffset": 878,
+      "endOffset": 914,
+      "codeContent": "com.project.supplychain.annotations.",
+      "aiProbability": 90,
+      "aiTool": "AI Assistant",
+      "detectionMethod": "REALTIME_SPEED_ANALYSIS",
+      "lineCount": 1
+    },
+    {
+      "filePath": "S:/Spring Core/Digital Logistics And Supply Chain Platform/src/main/java/com/project/supplychain/services/WarehouseService.java",
+      "timestamp": 1763116612254,
+      "startOffset": 107,
+      "endOffset": 163,
+      "codeContent": "import com.project.supplychain.annotations.RoleRequired;",
+      "aiProbability": 90,
+      "aiTool": "AI Assistant",
+      "detectionMethod": "REALTIME_SPEED_ANALYSIS",
+      "lineCount": 1
+    },
+    {
+      "filePath": "S:/Spring Core/Digital Logistics And Supply Chain Platform/src/main/java/com/project/supplychain/services/WarehouseService.java",
+      "timestamp": 1763116627193,
+      "startOffset": 2483,
+      "endOffset": 2519,
+      "codeContent": "com.project.supplychain.annotations.",
+      "aiProbability": 90,
+      "aiTool": "AI Assistant",
+      "detectionMethod": "REALTIME_SPEED_ANALYSIS",
+      "lineCount": 1
+    },
+    {
+      "filePath": "S:/Spring Core/Digital Logistics And Supply Chain Platform/src/main/java/com/project/supplychain/services/WarehouseService.java",
+      "timestamp": 1763116627207,
+      "startOffset": 107,
+      "endOffset": 163,
+      "codeContent": "import com.project.supplychain.annotations.RoleRequired;",
+      "aiProbability": 90,
+      "aiTool": "AI Assistant",
+      "detectionMethod": "REALTIME_SPEED_ANALYSIS",
+      "lineCount": 1
+    }
+  ],
+  "toolStats": {
+    "AI Assistant": {
+      "usageCount": 15,
+      "totalLines": 19
+    }
+  }
+}
