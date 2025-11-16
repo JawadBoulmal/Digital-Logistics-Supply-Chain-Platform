@@ -44,7 +44,7 @@ pipeline {
             steps {
                 // This step pulls the server config by name directly
                 withSonarQubeEnv('SonarQubeServer') {
-                    sh 'mvn sonar:sonar -Dsonar.projectKey=Digital-Logistics-Supply-Chain-Platform -Dsonar.coverage.jacoco.xmlReportPaths=target/jacoco.exec'                }
+                    sh 'mvn sonar:sonar -Dsonar.projectKey=Digital-Logistics-Supply-Chain-Platform -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml'                }
             }
         }
 
