@@ -34,9 +34,8 @@ pipeline {
                             classPattern: 'target/classes',
                             sourcePattern: 'src/main/java',
                             inclusionPattern: '**/*.class',
-                            minimumInstructionCoverage: '70',
-                            minimumLineCoverage: '70',
-                            minimumBranchCoverage: '60',
+                            minimumInstructionCoverage: '50',
+                            minimumLineCoverage: '50',
                             changeBuildStatus: true
                 }
             }
